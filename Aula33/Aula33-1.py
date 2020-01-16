@@ -12,8 +12,11 @@ cursor = conexao.cursor()
 comando_sql_select= "SELECT * FROM NicoleGruber"
 cursor.execute(comando_sql_select)
 
-lista_pessoas = []
+#---- Pega todos os resultados da execução do comando SQL e armazena em uma variável
 resultado_select = cursor.fetchall()
+
+#cria uma lista para armazenar os dicionarios
+lista_pessoas = []
 for p in resultado_select:
     dicionario_pessoa = {'ID' : 0 , 'Nome' : '' , 'Sobrenome' : '' , 'Idade' : 0 , 'Endereco_Id' : 0}
     dicionario_pessoa['ID'] = p[0]
@@ -23,7 +26,7 @@ for p in resultado_select:
     dicionario_pessoa['Endereco_Id'] = p[4]
     lista_pessoas.append(dicionario_pessoa)
 
-#---Abrindo arquivo, adicionando a lista nele e fechando automaticamente
-with open('c:/Users/900156/Documents/Nicole/Aula33/aula33.txt','a')as arquivo:
+#---Abrindo arquivo, adicionando a lista de dicionario nele em formato pré-definido e fechando automaticamente
+with open('C:/Users/900156/Desktop/AulasPython/Aula33/Aula33-1.txt','a')as arquivo:
     for p in lista_pessoas:
         arquivo.write(f"{p['ID']};{p['Nome']};{p['Sobrenome']};{p['Idade']};{p['Endereco_Id']}\n")
