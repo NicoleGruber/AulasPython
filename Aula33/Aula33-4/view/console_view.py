@@ -6,3 +6,9 @@ pc = PessoaController()
 
 for p in pc.listar_todos():
     print(p)
+
+from controller.endereco_controller import EnderecoController
+
+ec = EnderecoController()
+for e in ec.listar_todos():
+    print(e)

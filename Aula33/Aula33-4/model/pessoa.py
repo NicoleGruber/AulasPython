@@ -13,4 +13,4 @@ class Pessoa:
                 arquivo.write(f"{str(p)}\n")
     
     def __str__(self):
-        return f'{self.id};{self.nome};{self.sobrenome};{self.idade};{self.endereco_id}'
+        return f"{self.id};{self.nome};{self.sobrenome};{self.idade};{self.endereco_id}"
