@@ -1,0 +1,8 @@
+n;n;n
+n;n;n
+m;m;m
+o;o;o
+s;s;s
+g;g;g
+d;d;d
+g;gg;g
