@@ -15,7 +15,7 @@ nome_completo = '\t Nicole' ' ' 'Gruber \n '
 # print((nome_completo).strip() )
 # print((nome_completo).capitalize() )
 
-pessoa = [" ","Livro", "Azul", "Verde"]
+pessoa = [" ","Livro", "Rosa", "Verde"]
 # print(pessoa)
 # print((' nem ').join(pessoa))
 frase = 'Python'
