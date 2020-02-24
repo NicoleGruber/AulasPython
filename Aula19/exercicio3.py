@@ -29,7 +29,7 @@
 
 def ler_dados():
     cabecalho = ['codigo_cliente', 'nome', 'idade', 'sexo', 'email', 'telefone']
-    arquivo = open(r'C:\Users\Nicole\Desktop\AulasPython\Aula19\exercicios\cadastro.txt','r')
+    arquivo = open(r'C:\Users\Nicole\Desktop\AulasPython\Aula19\cadastro.txt','r')
     lista = []
     for nome in arquivo:
         dic = {}
@@ -50,7 +50,7 @@ def ler_dados():
 # Esta função tambem retornar uma lista com a biblioteca dos maiores de idades.
 
 def salvar(lista,nome):
-    arquivo = open(f'C:/Users/Nicole/Desktop/AulasPython/Aula19/exercicios/{nome}.txt','a')
+    arquivo = open(f'C:/Users/Nicole/Desktop/AulasPython/Aula19/{nome}.txt','a')
   
     for pessoa in lista:
         texto = f"{pessoa['codigo_cliente']};{pessoa['nome']};{pessoa['idade']};{pessoa['sexo']};{pessoa['email']};{pessoa['telefone']}\n"
