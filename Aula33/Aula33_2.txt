@@ -1,0 +1,7 @@
+1;Patricia;Gruber;40;1
+2;Nicole;Gruber;18;2
+3;Roberto;Gruber;42;3
+4;Leonardo;Gruber;7;4
+6;Matheus;Maiberg;18;5
+8;Lua;Gruber;4;1
+
